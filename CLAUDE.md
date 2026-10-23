@@ -25,7 +25,8 @@ Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor 
 - As execuções rodam na nuvem, sem o computador do Victor. Tente baixar a foto (galerias oficiais, via TinyFish se o download direto falhar).
 - Sem foto boa: use um molde sem foto (B-noticia, B-rumor, C) ou mande o post com a pergunta "tem uma foto que você queira usar?". Nunca trave a pauta por causa de foto.
 - **Post de jogador precisa de foto do jogador** (Victor, 23/10). Card só com gráfico, sem foto, não serve como versão final. Se não der para baixar, mande o post marcado como "falta foto" e avise exatamente o que bloqueou.
-- Bloqueio conhecido (23/10): a nuvem não acessa `chicagobears.com` nem `static.clubs.nfl.com`. O `fetch_content` do TinyFish lê as páginas, mas não baixa imagens. Não use automação "stealth" nem outros desvios. Até o Victor liberar esses domínios ou mandar a foto, peça a foto para ele.
+- Acesso à rede: liberado para todos os domínios (23/10). Fotos da galeria em tamanho cheio: `https://static.clubs.nfl.com/image/upload/bears/<id>.jpg`. Os ids saem do `fetch_content` (image_links) da página da galeria. Foto do perfil do jogador: `chicagobears.com/team/players-roster/<nome>/`, versão grande em `.../image/private/f_auto/bears/<id>.jpg`. Para achar o jogador, monte uma folha de contato e olhe as fotos (as galerias não têm legenda).
+- Corte o adversário fora da foto (regra "sem foto do adversário"). Registre cada foto nova em `assets/blobs.json` (md5 → caminho).
 
 ## Horários
 - Execuções: ~7h30, 11h30 e 17h (horário de Brasília).

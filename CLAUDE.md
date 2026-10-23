@@ -34,7 +34,7 @@ Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor 
 - **Post fixado "Temporada 2026"** (Victor, 23/10): UM card só (1080×1350) com os 17 jogos + a semana de folga, em lista: jogos feitos com V/D (verde/vermelho) e placar, jogos que faltam com data e horário em BRT; record atual em destaque (ex.: 5-2). Toda semana, depois do jogo, sai uma versão nova para aprovação; o Victor fixa a nova e apaga a antiga à mão (o Instagram não deixa trocar imagem de post publicado nem fixar/apagar pela API). Quando existir, criar `templates/A-temporada`. Conferir datas/horários no site oficial (chicagobears.com/schedule ou NFL.com).
 
 ## Horários
-- Execuções: ~7h30, 11h30 e 17h (horário de Brasília).
+- Execuções: 7h24, 11h24, 16h24 e 20h24 (horário de Brasília). A das 20h24 cobre o noticiário da tarde nos EUA; post dela sai à noite (21h–22h) e notícia que não for urgente pode ficar para a manhã seguinte.
 - Posts do dia normal: 2 a 4 (manhã, almoço, fim de tarde/noite).
 - **Dia de jogo** (hype!): mais volume + stories:
   - Manhã: card "Dia de jogo" (feed) + story de contagem regressiva.

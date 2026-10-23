@@ -52,6 +52,7 @@ Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor 
 - **Onde assistir**: sempre DAZN (Game Pass). Destaque em laranja só quando passar também em TV aberta ou fechada (ex.: ge TV, ESPN).
 - Adversário: só o nome (na cor do time adversário ou em branco). Sem logo nem foto do adversário.
 - Revise duas vezes: nomes, números, placar, data, horário, acentos. Nada repetido entre cards.
+- **Números da temporada atual em destaque** (Victor, 23/10): o dado principal de um card de jogador é da temporada em curso. Temporada passada só como apoio, se fizer sentido para a notícia.
 
 ## Marca
 - **Marcações** (Victor, 23/10): no máximo 1 a 3 por post, só de quem está no post.

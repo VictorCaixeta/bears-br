@@ -11,6 +11,7 @@ Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor 
    - Sites: chicagobears.com, ESPN, NFL.com, Chicago Tribune, Chicago Sun-Times, The Athletic, NBC Sports Chicago, CBS Sports, Pro Football Talk.
    - X/Instagram dos setoristas (via TinyFish): Adam Schefter, Ian Rapoport, Tom Pelissero, Adam Jahns, Brad Biggs, Courtney Cronin, Kevin Fishbain, Dan Wiederer, Jason Lieser, Larry Mayer, Chicago Bears oficial.
    - Tipos: notícia, rumor/troca, injury report, dia de jogo, resultado, card de jogador, zoeira/secador.
+   - **Assunto já publicado não volta ao feed** (Victor, 23/10): antes de propor post, confira no Metricool o que já foi PUBLICADO. Se um furo/rumor já foi postado e depois só se confirma (ex.: Kmet fora da temporada), não faça post novo de feed.
    - Só fatos confirmados. Rumor só como rumor (molde B-rumor, com termômetro) e sempre com quem disse.
 2. **Escolha o molde** em `templates/` e monte em `posts/AAAA-MM-DD/HHMM-assunto/src/N.dc.html` (copie o molde e troque textos/fotos).
 3. **Renderize**: `cd render && npm ci && cd .. && node render/render.mjs posts/AAAA-MM-DD/HHMM-assunto`. Precisa sair tudo ✓. Se aparecer ⚠ (texto fora da borda, blocos colados, imagem que não carregou), corrija e renderize de novo. Olhe cada JPG antes de mandar.

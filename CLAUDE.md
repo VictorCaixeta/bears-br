@@ -24,6 +24,8 @@ Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor 
 ## Fotos
 - As execuções rodam na nuvem, sem o computador do Victor. Tente baixar a foto (galerias oficiais, via TinyFish se o download direto falhar).
 - Sem foto boa: use um molde sem foto (B-noticia, B-rumor, C) ou mande o post com a pergunta "tem uma foto que você queira usar?". Nunca trave a pauta por causa de foto.
+- **Post de jogador precisa de foto do jogador** (Victor, 23/10). Card só com gráfico, sem foto, não serve como versão final. Se não der para baixar, mande o post marcado como "falta foto" e avise exatamente o que bloqueou.
+- Bloqueio conhecido (23/10): a nuvem não acessa `chicagobears.com` nem `static.clubs.nfl.com`. O `fetch_content` do TinyFish lê as páginas, mas não baixa imagens. Não use automação "stealth" nem outros desvios. Até o Victor liberar esses domínios ou mandar a foto, peça a foto para ele.
 
 ## Horários
 - Execuções: ~7h30, 11h30 e 17h (horário de Brasília).
@@ -47,6 +49,7 @@ Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor 
 ## Marca
 - Cores: navy `#0B162A`, laranja `#E64100`, creme `#F4EEE1`. Verde `#009C3B` e amarelo `#FFDF00` só nos traços do selo BRASIL.
 - Injury report: verde = liberado, amarelo = questionável, laranja = dúvida, vermelho = fora/IR.
+- **Lesão importante sem atualização oficial** (Victor, 23/10): se o time não atualizar até a rodada seguinte, monte o post assim mesmo, com foto do jogador e o que já se sabe (fala do técnico, como foi a lesão, quem reportou). Deixe claro que ainda falta o diagnóstico oficial.
 - Fontes: A = Barlow Condensed + Barlow (transmissão); B = Fraunces + Source Sans 3 (notícia/rumor); C = Bangers + DM Sans (zoeira).
 - Formato feed 1080×1350 (4:5). Story 1080×1920.
 - Cabeçalho com o selo BEARS/BRASIL; rodapé com @chicagobears.br. Carrossel: pílula "ARRASTE PRO LADO" no card 1.

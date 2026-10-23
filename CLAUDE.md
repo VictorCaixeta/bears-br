@@ -54,6 +54,11 @@ Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor 
 - Revise duas vezes: nomes, números, placar, data, horário, acentos. Nada repetido entre cards.
 
 ## Marca
+- **Marcações** (Victor, 23/10): no máximo 1 a 3 por post, só de quem está no post.
+  - Jogador do post: @ do perfil oficial dele na legenda (confirme o @ no perfil verificado antes; se não tiver certeza, não marque). Prioridade para o Cairo Santos e outros brasileiros, que costumam repostar.
+  - @chicagobears só em post grande (resultado, homenagem, notícia oficial importante).
+  - Nunca marcar outras fan-pages, perfis de rival ou contas que não têm a ver com o post.
+  - Marcar na foto e mencionar no story é manual: quando valer, diga ao Victor quem marcar ao compartilhar no story.
 - Cores: navy `#0B162A`, laranja `#E64100`, creme `#F4EEE1`. Verde `#009C3B` e amarelo `#FFDF00` só nos traços do selo BRASIL.
 - Injury report: verde = liberado, amarelo = questionável, laranja = dúvida, vermelho = fora/IR.
 - **Lesão importante sem atualização oficial** (Victor, 23/10): se o time não atualizar até a rodada seguinte, monte o post assim mesmo, com foto do jogador e o que já se sabe (fala do técnico, como foi a lesão, quem reportou). Deixe claro que ainda falta o diagnóstico oficial.

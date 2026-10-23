@@ -1,6 +1,6 @@
-# Bears Brasil · manual do agente (@chicagobears.br)
+# Bears Brasil · manual do agente (@dabears.brasil)
 
-Este repositório é a "redação" da página **@chicagobears.br** (Chicago Bears Brasil), do Victor.
+Este repositório é a "redação" da página **@dabears.brasil** (nome de exibição "Da Bears Brasil | Chicago Bears"; antes era @chicagobears.br, trocado em 23/10 para não confundir com o @chicagobearsbrasil, que já existe), do Victor.
 Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor em **português do Brasil**.
 
 ## Regra de ouro
@@ -17,7 +17,7 @@ Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor 
 3. **Renderize**: `cd render && npm ci && cd .. && node render/render.mjs posts/AAAA-MM-DD/HHMM-assunto`. Precisa sair tudo ✓. Se aparecer ⚠ (texto fora da borda, blocos colados, imagem que não carregou), corrija e renderize de novo. Olhe cada JPG antes de mandar.
 4. Escreva `legenda.txt` e `meta.json` (veja exemplos em `posts/2026-10-23/`). Faça commit e push para `main`.
 5. **Peça aprovação** ao Victor (notificação no app; WhatsApp via Bird quando estiver configurado). Mostre imagens + legenda + original em inglês + horário.
-6. **Depois do ok**: agende no Metricool (marca `chicagobears.br`, blogId `7601796`, fuso America/Sao_Paulo; feed, carrossel ou story) no horário combinado. Imagens: links `https://raw.githubusercontent.com/VictorCaixeta/bears-br/main/posts/...` (o repo é público; faça push antes de agendar). Depois mude `status` para `agendado` no `meta.json`, registre na planilha "Histórico de posts · Bears BR" no Drive. (Google Sheets conectado; id `19bei9rHFxS7ueoVLLzqdk-iPQsHDwptfLzLsd9BlO0o`, aba `Untitled`; uma linha por post, status "Aprovado" quando agendado.) Ajustes pedidos → refaça e mande de novo.
+6. **Depois do ok**: agende no Metricool (blogId `7601796`, fuso America/Sao_Paulo; feed, carrossel ou story) no horário combinado. Imagens: links `https://raw.githubusercontent.com/VictorCaixeta/bears-br/main/posts/...` (o repo é público; faça push antes de agendar). Depois mude `status` para `agendado` no `meta.json`, registre na planilha "Histórico de posts · Bears BR" no Drive. (Google Sheets conectado; id `19bei9rHFxS7ueoVLLzqdk-iPQsHDwptfLzLsd9BlO0o`, aba `Untitled`; uma linha por post, status "Aprovado" quando agendado.) Ajustes pedidos → refaça e mande de novo.
 
 ## Aprender com o Victor
 - Toda correção ou preferência que o Victor der numa aprovação ("não usa tal termo", "prefiro título mais curto"…) vira regra: atualize este CLAUDE.md na seção certa, faça commit e push na mesma execução. Assim a próxima execução já sabe.
@@ -59,10 +59,10 @@ Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor 
 - Fontes: A = Barlow Condensed + Barlow (transmissão); B = Fraunces + Source Sans 3 (notícia/rumor); C = Bangers + DM Sans (zoeira).
 - **Lesão = foto colorida** (Victor, 23/10): nada de preto e branco em post/story de lesão; P&B passa impressão de morte/luto. O tom triste vem do texto e do navy, não da foto.
 - Formato feed 1080×1350 (4:5). Story 1080×1920.
-- Cabeçalho com o selo BEARS/BRASIL; rodapé com @chicagobears.br. Carrossel: pílula "ARRASTE PRO LADO" no card 1.
+- Cabeçalho com o selo BEARS/BRASIL; rodapé com @dabears.brasil. Carrossel: pílula "ARRASTE PRO LADO" no card 1.
 - Fotos: primeiro as galerias oficiais (chicagobears.com/photos). Guardar em `assets/fotos/AAAA-MM-DD-assunto.jpg`.
 
-## Organização no Drive (pasta "Bears BR · @chicagobears.br")
+## Organização no Drive (pasta "Bears BR · @chicagobears.br" no Drive, nome antigo)
 - `02 · Aguardando aprovação/` → `AAAA-MM-DD · HHh · Assunto/`
 - `03 · Posts publicados/AAAA-MM Mês/AAAA-MM-DD (dia)/HHh · Assunto/` com `1 de 3.jpg`, `2 de 3.jpg`… e `legenda.txt`
 - `04 · Moldes dos cards/` = `templates/*.jpg` deste repo.

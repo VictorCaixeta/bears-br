@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>C – Notícia</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Anton&family=DM+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+@keyframes cWobble{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(-1deg) scale(1.03)}}
+@keyframes cWobbleR{0%,100%{transform:rotate(3deg)}50%{transform:rotate(6deg)}}
+@keyframes cSpin{to{transform:rotate(360deg)}}
+@keyframes cPop{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+@keyframes cShake{0%,100%{transform:translateX(0) rotate(var(--r))}25%{transform:translateX(-4px) rotate(var(--r))}75%{transform:translateX(4px) rotate(var(--r))}}
+.c-wob{animation:cWobble 2.4s ease-in-out infinite}
+.c-wobr{animation:cWobbleR 2.8s ease-in-out infinite}
+.c-spin{animation:cSpin 40s linear infinite}
+.c-pop{animation:cPop 1.6s ease-in-out infinite}
+.c-chip{animation:cShake 1.2s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.c-wob,.c-wobr,.c-spin,.c-pop,.c-chip{animation:none}}
+</style>
+</helmet>
+<div style="position: relative; width: 1080px; height: 1350px; box-sizing: border-box; padding: 60px 64px 0; display: flex; flex-direction: column; justify-content: space-between; background-color: #E64100; background-image: radial-gradient(rgba(11,22,42,0.22) 3px, transparent 3.6px); background-size: 24px 24px; color: #0B162A; font-family: 'DM Sans', sans-serif; overflow: hidden">
+
+<div style="display: flex; justify-content: space-between; align-items: center">
+<div class="c-wob" style="background: #0B162A; color: #FFFFFF; padding: 12px 30px; font-family: 'Bangers', cursive; font-size: 52px; letter-spacing: 3px; border: 5px solid #FFFFFF; box-shadow: 8px 8px 0 rgba(11,22,42,0.5)">BEARS BRASIL</div>
+<div class="c-wobr" style="background: #FFFFFF; color: #0B162A; padding: 10px 26px; font-weight: 800; font-size: 30px; letter-spacing: 3px; border: 5px solid #0B162A">RECIBO DO DIA</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-family: 'Bangers', cursive; font-size: 58px; letter-spacing: 2px; color: #FFFFFF; text-shadow: 5px 5px 0 #0B162A">A SEMANA INTEIRA NA TV:</div>
+<div style="display: flex; flex-wrap: wrap; gap: 14px 18px">
+<span class="c-chip" style="--r: -4deg; background: #F4EEE1; border: 4px solid #0B162A; padding: 6px 18px; font-weight: 800; font-size: 32px; opacity: 0.8">Falcons</span>
+<span class="c-chip" style="--r: 3deg; background: #F4EEE1; border: 4px solid #0B162A; padding: 6px 18px; font-weight: 800; font-size: 32px; opacity: 0.8; animation-delay: .2s">Falcons</span>
+<span class="c-chip" style="--r: -2deg; background: #F4EEE1; border: 4px solid #0B162A; padding: 6px 18px; font-weight: 800; font-size: 32px; opacity: 0.8; animation-delay: .4s">Falcons</span>
+<span class="c-chip" style="--r: 5deg; background: #F4EEE1; border: 4px solid #0B162A; padding: 6px 18px; font-weight: 800; font-size: 32px; opacity: 0.8; animation-delay: .1s">Falcons</span>
+<span class="c-chip" style="--r: -5deg; background: #F4EEE1; border: 4px solid #0B162A; padding: 6px 18px; font-weight: 800; font-size: 32px; opacity: 0.8; animation-delay: .3s">Falcons</span>
+<span class="c-chip" style="--r: 2deg; background: #F4EEE1; border: 4px solid #0B162A; padding: 6px 18px; font-weight: 800; font-size: 32px; opacity: 0.8; animation-delay: .5s">Falcons…</span>
+</div>
+</div>
+
+<div style="position: relative; height: 430px; display: flex; align-items: center; justify-content: center">
+<div aria-hidden="true" class="c-spin" style="position: absolute; width: 470px; height: 470px; background: #F4EEE1; clip-path: polygon(100.0% 50.0%, 89.5% 56.3%, 97.6% 65.5%, 85.6% 68.2%, 90.5% 79.4%, 78.3% 78.3%, 79.4% 90.5%, 68.2% 85.6%, 65.5% 97.6%, 56.3% 89.5%, 50.0% 100.0%, 43.7% 89.5%, 34.5% 97.6%, 31.8% 85.6%, 20.6% 90.5%, 21.7% 78.3%, 9.5% 79.4%, 14.4% 68.2%, 2.4% 65.5%, 10.5% 56.3%, 0.0% 50.0%, 10.5% 43.7%, 2.4% 34.5%, 14.4% 31.8%, 9.5% 20.6%, 21.7% 21.7%, 20.6% 9.5%, 31.8% 14.4%, 34.5% 2.4%, 43.7% 10.5%, 50.0% 0.0%, 56.3% 10.5%, 65.5% 2.4%, 68.2% 14.4%, 79.4% 9.5%, 78.3% 21.7%, 90.5% 20.6%, 85.6% 31.8%, 97.6% 34.5%, 89.5% 43.7%)"></div>
+<div class="c-pop" style="position: relative; display: flex; flex-direction: column; align-items: center; transform: rotate(-3deg)">
+<span style="font-family: 'Bangers', cursive; font-size: 52px; letter-spacing: 3px">AÍ O PLACAR:</span>
+<span style="font-family: 'Bangers', cursive; font-size: 190px; line-height: 0.9; color: #E64100; -webkit-text-stroke: 5px #0B162A; text-shadow: 8px 8px 0 #0B162A; letter-spacing: 4px">BEARS 31</span>
+<span style="font-weight: 800; font-size: 36px; letter-spacing: 2px; margin-top: 8px">Falcons 23</span>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="position: relative; background: #FFFFFF; border: 6px solid #0B162A; border-radius: 36px; box-shadow: 12px 12px 0 #0B162A; padding: 26px 36px; transform: rotate(-1.5deg)">
+<span style="display: block; font-weight: 800; font-size: 38px; line-height: 1.25">“Vi lá todo mundo falando Falcons, Falcons, Falcons, Falcons. Aí eu olho pro placar: Bears.”</span>
+<div aria-hidden="true" style="position: absolute; left: 90px; bottom: -30px; width: 44px; height: 44px; background: #FFFFFF; border-right: 6px solid #0B162A; border-bottom: 6px solid #0B162A; transform: rotate(45deg)"></div>
+</div>
+<span style="padding-left: 160px; font-weight: 800; font-size: 28px; color: #FFFFFF; text-shadow: 3px 3px 0 #0B162A">— Caleb Williams, depois de 30/36 e 305 jardas</span>
+</div>
+
+<div style="margin: 0 -64px; background: #0B162A; color: #FFFFFF; padding: 22px 64px; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+<img src="/_blob/13793994b2b4b225eb49e14f62cc0257" alt="Chicago Bears" style="width: 104px; height: auto">
+<span style="flex: 1"></span>
+<span style="font-family: 'Bangers', cursive; font-size: 38px; letter-spacing: 2px">@chicagobears.br</span>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

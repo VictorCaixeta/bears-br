@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Pós-jogo 3 – Zoeira</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=DM+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+@keyframes pzWobble{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(-1deg) scale(1.03)}}
+@keyframes pzWobbleR{0%,100%{transform:rotate(3deg)}50%{transform:rotate(6deg)}}
+@keyframes pzSpin{to{transform:rotate(360deg)}}
+@keyframes pzPop{0%,100%{transform:rotate(var(--r)) scale(1)}50%{transform:rotate(var(--r)) scale(1.05)}}
+.pz-wob{animation:pzWobble 2.4s ease-in-out infinite}
+.pz-wobr{animation:pzWobbleR 2.8s ease-in-out infinite}
+.pz-spin{animation:pzSpin 40s linear infinite}
+.pz-pop{animation:pzPop 1.8s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.pz-wob,.pz-wobr,.pz-spin,.pz-pop{animation:none}}
+</style>
+</helmet>
+<div style="position: relative; width: 1080px; height: 1350px; box-sizing: border-box; padding: 60px 64px 0; display: flex; flex-direction: column; justify-content: space-between; background-color: #E64100; background-image: radial-gradient(rgba(11,22,42,0.22) 3px, transparent 3.6px); background-size: 24px 24px; color: #0B162A; font-family: 'DM Sans', sans-serif; overflow: hidden">
+
+<div style="display: flex; justify-content: space-between; align-items: center">
+<div class="pz-wob" style="background: #0B162A; color: #FFFFFF; padding: 12px 30px; font-family: 'Bangers', cursive; font-size: 52px; letter-spacing: 3px; border: 5px solid #FFFFFF; box-shadow: 8px 8px 0 rgba(11,22,42,0.5)">BEARS BRASIL</div>
+<div class="pz-wobr" style="background: #FFFFFF; color: #0B162A; padding: 10px 26px; font-weight: 800; font-size: 30px; letter-spacing: 3px; border: 5px solid #0B162A">ESSA FOI PRO DITKA</div>
+</div>
+
+<h1 style="margin: 0; font-family: 'Bangers', cursive; font-weight: 400; font-size: 140px; line-height: 0.92; letter-spacing: 3px; color: #FFFFFF; text-shadow: 8px 8px 0 #0B162A">40 ANOS DEPOIS,<br>MESMO FINAL.</h1>
+
+<div style="position: relative; display: flex; flex-direction: column; gap: 28px">
+<div aria-hidden="true" class="pz-spin" style="position: absolute; right: -40px; top: 50%; margin-top: -170px; width: 340px; height: 340px; background: #F4EEE1; clip-path: polygon(100.0% 50.0%, 89.5% 56.3%, 97.6% 65.5%, 85.6% 68.2%, 90.5% 79.4%, 78.3% 78.3%, 79.4% 90.5%, 68.2% 85.6%, 65.5% 97.6%, 56.3% 89.5%, 50.0% 100.0%, 43.7% 89.5%, 34.5% 97.6%, 31.8% 85.6%, 20.6% 90.5%, 21.7% 78.3%, 9.5% 79.4%, 14.4% 68.2%, 2.4% 65.5%, 10.5% 56.3%, 0.0% 50.0%, 10.5% 43.7%, 2.4% 34.5%, 14.4% 31.8%, 9.5% 20.6%, 21.7% 21.7%, 20.6% 9.5%, 31.8% 14.4%, 34.5% 2.4%, 43.7% 10.5%, 50.0% 0.0%, 56.3% 10.5%, 65.5% 2.4%, 68.2% 14.4%, 79.4% 9.5%, 78.3% 21.7%, 90.5% 20.6%, 85.6% 31.8%, 97.6% 34.5%, 89.5% 43.7%)"></div>
+<div class="pz-pop" style="--r: -2deg; position: relative; width: 640px; background: #FFFFFF; border: 6px solid #0B162A; box-shadow: 12px 12px 0 #0B162A; padding: 22px 30px; display: flex; flex-direction: column; gap: 4px">
+<span style="font-weight: 800; font-size: 26px; letter-spacing: 3px; color: #4A5562">1986 · SUPER BOWL XX</span>
+<span style="font-family: 'Bangers', cursive; font-size: 96px; line-height: 1; letter-spacing: 2px">BEARS 46 <span style="font-size: 48px">× 10 Patriots</span></span>
+</div>
+<div class="pz-pop" style="--r: 2deg; position: relative; width: 640px; margin-left: 80px; background: #0B162A; color: #FFFFFF; border: 6px solid #FFFFFF; box-shadow: 12px 12px 0 rgba(11,22,42,0.5); padding: 22px 30px; display: flex; flex-direction: column; gap: 4px; animation-delay: .4s">
+<span style="font-weight: 800; font-size: 26px; letter-spacing: 3px; color: #F4EEE1">2026 · SOLDIER FIELD</span>
+<span style="font-family: 'Bangers', cursive; font-size: 96px; line-height: 1; letter-spacing: 2px; color: #E64100">BEARS 30 <span style="font-size: 48px; color: #FFFFFF">× 24 Patriots</span></span>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="position: relative; background: #FFFFFF; border: 6px solid #0B162A; border-radius: 36px; box-shadow: 12px 12px 0 #0B162A; padding: 24px 36px; transform: rotate(-1.5deg)">
+<span style="display: block; font-weight: 800; font-size: 40px; line-height: 1.25">Justo na noite da homenagem ao Ditka. Lá de cima, o bigode aprovou.</span>
+</div>
+</div>
+
+<div style="margin: 0 -64px; background: #0B162A; color: #FFFFFF; padding: 22px 64px; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+<img src="/_blob/13793994b2b4b225eb49e14f62cc0257" alt="Chicago Bears" style="width: 104px; height: auto">
+<span style="flex: 1"></span>
+<span style="font-family: 'Bangers', cursive; font-size: 38px; letter-spacing: 2px">@chicagobears.br</span>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

@@ -16,7 +16,7 @@ Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor 
 3. **Renderize**: `cd render && npm ci && cd .. && node render/render.mjs posts/AAAA-MM-DD/HHMM-assunto`. Precisa sair tudo ✓. Se aparecer ⚠ (texto fora da borda, blocos colados, imagem que não carregou), corrija e renderize de novo. Olhe cada JPG antes de mandar.
 4. Escreva `legenda.txt` e `meta.json` (veja exemplos em `posts/2026-10-23/`). Faça commit e push para `main`.
 5. **Peça aprovação** ao Victor (notificação no app; WhatsApp via Bird quando estiver configurado). Mostre imagens + legenda + original em inglês + horário.
-6. **Depois do ok**: agende no Metricool (feed, carrossel ou story) no horário combinado, mude `status` para `agendado` no `meta.json`, registre na planilha "Histórico de posts · Bears BR" no Drive. Ajustes pedidos → refaça e mande de novo.
+6. **Depois do ok**: agende no Metricool (marca `chicagobears.br`, blogId `7601796`, fuso America/Sao_Paulo; feed, carrossel ou story) no horário combinado. Imagens: links `https://raw.githubusercontent.com/VictorCaixeta/bears-br/main/posts/...` (o repo é público; faça push antes de agendar). Depois mude `status` para `agendado` no `meta.json`, registre na planilha "Histórico de posts · Bears BR" no Drive. Ajustes pedidos → refaça e mande de novo.
 
 ## Horários
 - Execuções: ~7h30, 11h30 e 17h (horário de Brasília).

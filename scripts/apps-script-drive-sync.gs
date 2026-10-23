@@ -2,9 +2,10 @@
  * Da Bears Brasil · sincroniza posts do GitHub para o Google Drive.
  * Instalação (uma vez): script.google.com → Novo projeto → cole este arquivo →
  *   Configurações do projeto → Propriedades do script:
- *     GITHUB_TOKEN = token "fine-grained" só de leitura do repo VictorCaixeta/bears-br
+ *     (opcional) GITHUB_TOKEN = token só de leitura. O repo é público, então funciona sem token.
  *   Rode syncPosts() uma vez para autorizar; depois Acionadores → syncPosts a cada 1 hora.
  * Copia cada posts/AAAA-MM-DD/HHMM-assunto/ para:
+ *   status descartado                  → ignorado
  *   status aprovado/agendado/publicado → 03 · Posts publicados/AAAA-MM Mês/AAAA-MM-DD (dia)/HHh · Assunto/
  *   status aguardando                  → 02 · Aguardando aprovação/AAAA-MM-DD · HHh · Assunto/
  * e templates/*.jpg → 04 · Moldes dos cards/. Arquivos já existentes com o mesmo nome são substituídos.
@@ -15,12 +16,18 @@ const PUBLICADOS_ID = '1aCAQkFVrlNiDTjNun8QNRYa2AbXk52FV';
 const AGUARDANDO_ID = '1Zgv7YrQhJo6XtmxDH8DiTaXkN-GP9W46';
 const MOLDES_ID = '1K2ZBlqmG57VaRsqwpuKppi4OUWCm1ZwP';
 const MESES = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+const NOMES_MOLDES = {
+  'A-dia-de-jogo.jpg': 'A · Dia de jogo.jpg', 'A-dia-de-jogo-2-fotos.jpg': 'A · Dia de jogo (2 fotos).jpg',
+  'A-injury-report.jpg': 'A · Injury report.jpg', 'A-resultado.jpg': 'A · Resultado.jpg', 'A-card-jogador.jpg': 'A · Card de jogador.jpg',
+  'B-noticia.jpg': 'B · Notícia.jpg', 'B-rumor.jpg': 'B · Rumor e troca.jpg',
+  'C-zoeira-noticia.jpg': 'C · Zoeira com notícia.jpg', 'C-secador.jpg': 'C · Secador (rivais).jpg',
+};
 const DIAS = ['domingo','segunda','terça','quarta','quinta','sexta','sábado'];
 
 function gh_(path, raw) {
   const token = PropertiesService.getScriptProperties().getProperty('GITHUB_TOKEN');
   const res = UrlFetchApp.fetch('https://api.github.com/repos/' + REPO + '/contents/' + encodeURI(path), {
-    headers: { Authorization: 'Bearer ' + token, Accept: raw ? 'application/vnd.github.raw' : 'application/vnd.github+json' },
+    headers: Object.assign({ Accept: raw ? 'application/vnd.github.raw' : 'application/vnd.github+json' }, token ? { Authorization: 'Bearer ' + token } : {}),
     muteHttpExceptions: true,
   });
   if (res.getResponseCode() !== 200) throw new Error(path + ': HTTP ' + res.getResponseCode());
@@ -52,8 +59,11 @@ function syncPosts() {
       const meta = JSON.parse(gh_(post.path + '/meta.json', true).getDataAsString());
       const key = post.path + '|' + meta.status + '|' + files.map(f => f.sha).join(',');
       if (done[post.path] === key) continue;
+      if (meta.status === 'descartado') { done[post.path] = key; continue; }
       const [y, m, d] = day.name.split('-').map(Number);
-      const hh = post.name.slice(0, 2) + 'h · ' + titulo_(post.name);
+      // pasta: "HHh · Título" (usa meta.titulo e meta.hora quando existem)
+      const hora = (meta.hora || post.name.slice(0, 2)).slice(0, 2);
+      const hh = hora + 'h · ' + (meta.titulo || titulo_(post.name));
       let dest;
       if (meta.status === 'aguardando') {
         dest = folder_(DriveApp.getFolderById(AGUARDANDO_ID), day.name + ' · ' + hh);
@@ -75,7 +85,7 @@ function syncPosts() {
   const moldes = DriveApp.getFolderById(MOLDES_ID);
   for (const f of gh_('templates').filter(f => /\.jpg$/.test(f.name))) {
     if (done['t:' + f.path] === f.sha) continue;
-    put_(moldes, f.name, gh_(f.path, true));
+    put_(moldes, NOMES_MOLDES[f.name] || f.name, gh_(f.path, true));
     done['t:' + f.path] = f.sha;
   }
   props.setProperty('SYNCED', JSON.stringify(done));

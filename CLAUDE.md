@@ -15,7 +15,7 @@ Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor 
    - Só fatos confirmados. Rumor só como rumor (molde B-rumor, com termômetro) e sempre com quem disse.
 2. **Escolha o molde** em `templates/` e monte em `posts/AAAA-MM-DD/HHMM-assunto/src/N.dc.html` (copie o molde e troque textos/fotos).
 3. **Renderize**: `cd render && npm ci && cd .. && node render/render.mjs posts/AAAA-MM-DD/HHMM-assunto`. Precisa sair tudo ✓. Se aparecer ⚠ (texto fora da borda, blocos colados, imagem que não carregou), corrija e renderize de novo. Olhe cada JPG antes de mandar.
-4. Escreva `legenda.txt` e `meta.json` (veja exemplos em `posts/2026-10-23/`). Faça commit e push para `main`.
+4. Escreva `legenda.txt` e `meta.json` (com `titulo` curto, ex.: "Cairo Santos redenção", que vira o nome da pasta no Drive; status: aguardando → agendado → publicado, ou descartado) (veja exemplos em `posts/2026-10-23/`). Faça commit e push para `main`.
 5. **Peça aprovação** ao Victor (notificação no app; WhatsApp via Bird quando estiver configurado). Mostre imagens + legenda + original em inglês + horário.
 6. **Depois do ok**: agende no Metricool (blogId `7601796`, fuso America/Sao_Paulo; feed, carrossel ou story) no horário combinado. Imagens: links `https://raw.githubusercontent.com/VictorCaixeta/bears-br/main/posts/...` (o repo é público; faça push antes de agendar). Depois mude `status` para `agendado` no `meta.json`, registre na planilha "Histórico de posts · Bears BR" no Drive. (Google Sheets conectado; id `19bei9rHFxS7ueoVLLzqdk-iPQsHDwptfLzLsd9BlO0o`, aba `Untitled`; uma linha por post, status "Aprovado" quando agendado.) Ajustes pedidos → refaça e mande de novo.
 

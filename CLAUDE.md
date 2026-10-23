@@ -57,6 +57,7 @@ Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor 
 - Injury report: verde = liberado, amarelo = questionável, laranja = dúvida, vermelho = fora/IR.
 - **Lesão importante sem atualização oficial** (Victor, 23/10): se o time não atualizar até a rodada seguinte, monte o post assim mesmo, com foto do jogador e o que já se sabe (fala do técnico, como foi a lesão, quem reportou). Deixe claro que ainda falta o diagnóstico oficial.
 - Fontes: A = Barlow Condensed + Barlow (transmissão); B = Fraunces + Source Sans 3 (notícia/rumor); C = Bangers + DM Sans (zoeira).
+- **Lesão = foto colorida** (Victor, 23/10): nada de preto e branco em post/story de lesão; P&B passa impressão de morte/luto. O tom triste vem do texto e do navy, não da foto.
 - Formato feed 1080×1350 (4:5). Story 1080×1920.
 - Cabeçalho com o selo BEARS/BRASIL; rodapé com @chicagobears.br. Carrossel: pílula "ARRASTE PRO LADO" no card 1.
 - Fotos: primeiro as galerias oficiais (chicagobears.com/photos). Guardar em `assets/fotos/AAAA-MM-DD-assunto.jpg`.

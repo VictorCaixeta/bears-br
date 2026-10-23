@@ -18,6 +18,13 @@ Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor 
 5. **Peça aprovação** ao Victor (notificação no app; WhatsApp via Bird quando estiver configurado). Mostre imagens + legenda + original em inglês + horário.
 6. **Depois do ok**: agende no Metricool (marca `chicagobears.br`, blogId `7601796`, fuso America/Sao_Paulo; feed, carrossel ou story) no horário combinado. Imagens: links `https://raw.githubusercontent.com/VictorCaixeta/bears-br/main/posts/...` (o repo é público; faça push antes de agendar). Depois mude `status` para `agendado` no `meta.json`, registre na planilha "Histórico de posts · Bears BR" no Drive. Ajustes pedidos → refaça e mande de novo.
 
+## Aprender com o Victor
+- Toda correção ou preferência que o Victor der numa aprovação ("não usa tal termo", "prefiro título mais curto"…) vira regra: atualize este CLAUDE.md na seção certa, faça commit e push na mesma execução. Assim a próxima execução já sabe.
+
+## Fotos
+- As execuções rodam na nuvem, sem o computador do Victor. Tente baixar a foto (galerias oficiais, via TinyFish se o download direto falhar).
+- Sem foto boa: use um molde sem foto (B-noticia, B-rumor, C) ou mande o post com a pergunta "tem uma foto que você queira usar?". Nunca trave a pauta por causa de foto.
+
 ## Horários
 - Execuções: ~7h30, 11h30 e 17h (horário de Brasília).
 - Posts do dia normal: 2 a 4 (manhã, almoço, fim de tarde/noite).

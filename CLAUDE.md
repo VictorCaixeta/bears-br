@@ -1,4 +1,4 @@
-# Bears Brasil · manual do agente (@dabears.brasil)
+# Da Bears Brasil · manual do agente (@dabears.brasil)
 
 Este repositório é a "redação" da página **@dabears.brasil** (nome de exibição "Da Bears Brasil | Chicago Bears"; antes era @chicagobears.br, trocado em 23/10 para não confundir com o @chicagobearsbrasil, que já existe), do Victor.
 Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor em **português do Brasil**.
@@ -59,7 +59,7 @@ Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor 
 - Fontes: A = Barlow Condensed + Barlow (transmissão); B = Fraunces + Source Sans 3 (notícia/rumor); C = Bangers + DM Sans (zoeira).
 - **Lesão = foto colorida** (Victor, 23/10): nada de preto e branco em post/story de lesão; P&B passa impressão de morte/luto. O tom triste vem do texto e do navy, não da foto.
 - Formato feed 1080×1350 (4:5). Story 1080×1920.
-- Cabeçalho com o selo BEARS/BRASIL; rodapé com @dabears.brasil. Carrossel: pílula "ARRASTE PRO LADO" no card 1.
+- Cabeçalho com o selo BEARS/BRASIL; rodapé com @dabears.brasil. Onde o nome da página aparece escrito no cabeçalho (moldes B, stories), é **"Da Bears Brasil"**, nunca só "Bears Brasil" (Victor, 23/10). Carrossel: pílula "ARRASTE PRO LADO" no card 1.
 - Fotos: primeiro as galerias oficiais (chicagobears.com/photos). Guardar em `assets/fotos/AAAA-MM-DD-assunto.jpg`.
 
 ## Organização no Drive (pasta "Bears BR · @dabears.brasil")

@@ -1,5 +1,5 @@
 /**
- * Bears Brasil · sincroniza posts do GitHub para o Google Drive.
+ * Da Bears Brasil · sincroniza posts do GitHub para o Google Drive.
  * Instalação (uma vez): script.google.com → Novo projeto → cole este arquivo →
  *   Configurações do projeto → Propriedades do script:
  *     GITHUB_TOKEN = token "fine-grained" só de leitura do repo VictorCaixeta/bears-br

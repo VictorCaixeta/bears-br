@@ -62,7 +62,7 @@ Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor 
 - Cabeçalho com o selo BEARS/BRASIL; rodapé com @dabears.brasil. Carrossel: pílula "ARRASTE PRO LADO" no card 1.
 - Fotos: primeiro as galerias oficiais (chicagobears.com/photos). Guardar em `assets/fotos/AAAA-MM-DD-assunto.jpg`.
 
-## Organização no Drive (pasta "Bears BR · @chicagobears.br" no Drive, nome antigo)
+## Organização no Drive (pasta "Bears BR · @dabears.brasil")
 - `02 · Aguardando aprovação/` → `AAAA-MM-DD · HHh · Assunto/`
 - `03 · Posts publicados/AAAA-MM Mês/AAAA-MM-DD (dia)/HHh · Assunto/` com `1 de 3.jpg`, `2 de 3.jpg`… e `legenda.txt`
 - `04 · Moldes dos cards/` = `templates/*.jpg` deste repo.

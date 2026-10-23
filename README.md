@@ -1,6 +1,6 @@
 # bears-br
 
-Redação da página **@dabears.brasil** (Chicago Bears Brasil): moldes dos cards, posts por dia e o gerador de imagens.
+Redação da página **@dabears.brasil** (Da Bears Brasil): moldes dos cards, posts por dia e o gerador de imagens.
 
 - Manual do agente e regras da marca: [CLAUDE.md](CLAUDE.md)
 - Moldes: `templates/` · Posts: `posts/AAAA-MM-DD/` · Logos: `brand/logos/`

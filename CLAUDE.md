@@ -28,6 +28,9 @@ Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor 
 - Acesso à rede: liberado para todos os domínios (23/10). Fotos da galeria em tamanho cheio: `https://static.clubs.nfl.com/image/upload/bears/<id>.jpg`. Os ids saem do `fetch_content` (image_links) da página da galeria. Foto do perfil do jogador: `chicagobears.com/team/players-roster/<nome>/`, versão grande em `.../image/private/f_auto/bears/<id>.jpg`. Para achar o jogador, monte uma folha de contato e olhe as fotos (as galerias não têm legenda).
 - Corte o adversário fora da foto (regra "sem foto do adversário"). Registre cada foto nova em `assets/blobs.json` (md5 → caminho).
 
+## Ideias de pauta (Victor)
+- **Carrossel "De olho nos números"** (Victor, 23/10): capa com a ideia geral + 1 dado forte por card, com foto grande do jogador e tarja laranja "DE OLHO NOS NÚMEROS". Bom para dia sem notícia e semana de folga. Ainda não existe molde: criar `templates/A-numeros` na primeira vez. Números conferidos em fonte primária (Pro Football Reference, chicagobears.com, NFL.com), nunca copiados de outra página. Primeiras pautas: Caleb desde a volta da lesão (300+ jardas seguidas; 35 jogos seguidos com 20+ passes e no máx. 1 INT, empatado com Rodgers, conferir), Luther Burden (17 de 17 alvos recebidos), Cairo (FG de 58, recorde do time).
+
 ## Horários
 - Execuções: ~7h30, 11h30 e 17h (horário de Brasília).
 - Posts do dia normal: 2 a 4 (manhã, almoço, fim de tarde/noite).

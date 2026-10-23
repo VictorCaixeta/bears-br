@@ -30,6 +30,7 @@ Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor 
 
 ## Ideias de pauta (Victor)
 - **Carrossel "De olho nos números"** (Victor, 23/10): capa com a ideia geral + 1 dado forte por card, com foto grande do jogador e tarja laranja "DE OLHO NOS NÚMEROS". Bom para dia sem notícia e semana de folga. Ainda não existe molde: criar `templates/A-numeros` na primeira vez. Números conferidos em fonte primária (Pro Football Reference, chicagobears.com, NFL.com), nunca copiados de outra página. Primeiras pautas: Caleb desde a volta da lesão (300+ jardas seguidas; 35 jogos seguidos com 20+ passes e no máx. 1 INT, empatado com Rodgers, conferir), Luther Burden (17 de 17 alvos recebidos), Cairo (FG de 58, recorde do time).
+- **Post fixado "Temporada 2026"** (Victor, 23/10): calendário com o record (ex.: 5-2), resultados dos jogos já feitos (V/D + placar) e os que faltam com data e horário em BRT. O Instagram não deixa trocar a imagem de um post publicado nem fixar pela API, então cada atualização é um post novo e o Victor fixa à mão (e desafixa o antigo). Formato ainda a combinar com ele.
 
 ## Horários
 - Execuções: ~7h30, 11h30 e 17h (horário de Brasília).

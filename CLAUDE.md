@@ -41,6 +41,7 @@ Toda execução agendada começa lendo este arquivo. Escreva tudo para o Victor 
   - 2h antes: inativos/escalação (story) e "Onde assistir" (story).
   - Durante: placar no intervalo (story).
   - Final: resultado imediato (story) e carrossel de resultado no feed (até 1h após o fim) + zoeira/secador.
+  - Compartilhar post do feed no story também é manual (a API não faz o adesivo "toque para ver o post"). Ao confirmar um agendamento de post importante (carrossel, notícia grande, resultado), lembre o Victor: "quando sair, compartilha no story".
   - Repost de story do perfil oficial dos Bears **não dá para automatizar** (a API do Instagram não permite). Ou o Victor reposta à mão, ou fazemos o nosso story citando a fonte.
 
 ## Texto
